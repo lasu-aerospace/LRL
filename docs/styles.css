@@ -5,6 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
     min-height: 100vh;
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -200,11 +201,17 @@ div img {
 table {
     position: relative;
     width: 100%;
-  }
+}
+
+td a {
+    text-decoration: underline;
+}
+
 table, th, td {
     border: 1px solid aliceblue;
     border-collapse: collapse;
 }
+
 th, td {
     padding: 10px;
     text-align: center;
@@ -291,5 +298,20 @@ input, textarea {
 .table-container {
     overflow-x: auto;
     max-width: 100%;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
+    
+    /* Centrando con posición absoluta */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 

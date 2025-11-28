@@ -26,22 +26,6 @@
             display: flex;
         }
 
-        /* Contenedor centrado con posición absoluta */
-        .container {
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 90%;
-            text-align: center;
-            
-            /* Centrando con posición absoluta */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
     </style>
 </head>
 <body>
@@ -54,9 +38,10 @@
         </button>
     </nav>
     <div class="menu-container">
-        <img src="LASU_logo.png">
+        <a href="index.html">
+            <img src="LASU_logo.png">
+        </a>
         <ul>
-            <li><a href="index.html">Página principal</a></li>
             <li><a href="research.html">Investigaciones</a></li>
             <li><a href="https://lasu-aerospace.github.io/webhost/">LASU</a></li>
             <li><a href="https://github.com/lasu-aerospace">GitHub</a></li>

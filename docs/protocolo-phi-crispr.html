@@ -21,12 +21,8 @@
     <style>
         body {
             background-image: url('crispr.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
         }
-    </style>   
+    </style>
 </head>
 <body>
     <!-- Esencial en todas las páginas (barra de navegación) -->
@@ -38,9 +34,10 @@
         </button>
     </nav>
     <div class="menu-container">
-        <img src="LASU_logo.png">
+        <a href="index.html">
+            <img src="LASU_logo.png">
+        </a>
         <ul>
-            <li><a href="index.html">Página principal</a></li>
             <li><a href="research.html">Investigaciones</a></li>
             <li><a href="contact.html">Contacto</a></li>
             <li><a href="https://lasu-aerospace.github.io/webhost/">LASU</a></li>
@@ -50,7 +47,7 @@
     <div class="overlay" onclick="toggleMenu()"></div>
 
     <div id="markdown-container" class="markdown-body">Cargando contenido...</div>
-
+    
     <script>
         loadMarkdownFromGitHub("ezegamer135", "UCC-Research-Laboratories", "Investigaciones/protocolo-phi-crispr.md");
     </script>
