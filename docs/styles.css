@@ -3,9 +3,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
     background-position: center;
+    background-color: black:
     background-repeat: no-repeat;
     color: white;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
