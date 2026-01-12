@@ -1,7 +1,10 @@
 # Protocolo ΦCRISPR
 El cáncer es una de las principales causas de mortandad a nivel mundial, caracterizado por el crecimiento descontrolado de células que pueden invadir tejidos circundantes y diseminarse a otras partes del cuerpo. La tecnología CRISPR-Cas9, desarrollada como una herramienta de edición genética de alta precisión, ha generado gran expectativa como una posible solución para combatir esta enfermedad.
 
-### Marco Teórico
+## Marco Teórico
+
+[![model](https://img.shields.io/badge/ipynb-model-cyan)](/docs/crisprphi.pdf)
+
 La herramienta CRISPR-Cas9, inicialmente descubierta como parte del sistema inmunitario adaptativo de bacterias y arqueas, ha sido adaptada para la edición genética en organismos superiores. Su mecanismo principal consiste en el uso de una proteína Cas9, guiada por un ARN dirigido (gRNA), para identificar y cortar secuencias específicas de ADN. Este sistema permite modificar genes con una precisión sin precedentes, lo que lo ha convertido en una revolución para la biología molecular y la medicina.
 <br><br>
 En el contexto del cáncer, esta tecnología ofrece nuevas perspectivas al abordar directamente las bases genéticas de la enfermedad. El cáncer se origina, en su mayoría, por mutaciones en genes críticos que regulan la proliferación celular, dividiéndose principalmente en dos categorías:
@@ -24,6 +27,93 @@ Entre sus aplicaciones destacadas se encuentran:
 |*Desactivación de oncogenes*|*Reparación de genes supresores de tumores*|*Optimización del sistema inmunitario*|
 |-|-|-|
 |Genes que promueven el crecimiento tumoral.|Como *TP53* o *BRCA1*, que pierden funcionalidad en ciertos cánceres.|Programación de células CAR-T (células T con receptor de antígeno quimérico) para reconocer<br>y destruir células cancerosas.|
+
+---
+
+## Tratameinto del sistema ΦCRISPR
+### Neutralización Oncológica No Letal Inicial
+#### Resumen
+Se presenta un marco teórico interdisciplinario para la neutralización progresiva del cáncer mediante la integración secuencial de detección algorítmica, inmovilización física y eliminación genética dirigida. El enfoque prioriza la estabilización del sistema tumoral antes de su intervención molecular, reduciendo resistencia adaptativa, daño colateral y dependencia de tratamientos citotóxicos agresivos.
+#### 1. Principio rector
+El cáncer es modelado como un sistema biológico dinámico inestable, caracterizado por:
+- Alta tasa de proliferación.
+- Pérdida de mecanismos de control homeostático.
+- Capacidad adaptativa acelerada.
+Bajo esta definición, el tratamiento no busca la destrucción inmediata del sistema, sino su desacople dinámico, seguido de corrección estructural. El orden de intervención es crítico.
+#### 2. Arquitectura General del Sistema
+El sistema Phi-CRISPR-Cas9 se compone de tres subsistemas funcionales interdependientes:
+1. SRDP<br>
+Sistema de Detección y Reconocimiento de Patologías.
+2. TTF<br>
+Sistema de inmovilización tumoral mediante campos eléctricos alternantes.
+3. CRISPR<br>
+Intervención genética de precisión a nivel subcelular.
+Cada módulo actúa en una fase distinta del proceso patológico, evitando solapamientos funcionales innecesarios.
+#### 3. SRDP
+##### Sistema de Detección y Reconocimiento de Patologías
+###### Objetivo
+Identificar, localizar y caracterizar regiones tumorales mediante análisis algorítmico de imágenes médicas.
+###### Fundamento teórico
+El SRDP se basa en redes neuronales entrenadas para reconocer:
+- Asimetrías morfológicas.
+- Patrones de crecimiento no compatibles con tejidos sanos.
+- Heterogeneidad estructural interna.
+###### Salida del sistema
+El SRDP no produce un diagnóstico binario, sino un mapa paramétrico tumoral, incluyendo:
+- Localización espacial.
+- Volumen estimado.
+- Índices de irregularidad y actividad relativa.
+Este output es utilizado como entrada directa para la modulación del sistema TTF.
+### 4. TTF
+#### Inmovilización Física del Sistema Tumoral
+##### Objetivo
+Reducir la capacidad proliferativa y adaptativa del tumor sin inducir necrosis masiva.
+##### Principio físico
+Se emplean campos eléctricos:
+- De baja intensidad.
+- Alternantes.
+- Intermitentes.
+- Con inversión periódica de polaridad.
+Estos campos interfieren selectivamente con procesos celulares de alta demanda energética y organización rápida, particularmente la mitosis.
+##### Diferencial biológico
+- Las células sanas operan lejos del umbral de inestabilidad.
+- Las células tumorales dependen de procesos altamente dinámicos y desregulados.
+Como consecuencia, el campo actúa como:
+- Ruido tolerable para tejido sano.
+- Factor desorganizador para células tumorales.
+##### Resultado esperado
+- Supresión de expansión tumoral.
+- Reducción de heterogeneidad genética.
+- Estabilización temporal del sistema patológico.
+El tumor entra en un estado funcionalmente inerte, pero viable.
+### 5. CRISPR
+#### Intervención Genética Dirigida
+##### Condición de activación
+La intervención genética se aplica únicamente tras la estabilización lograda por TTF.
+##### Fundamento teórico
+Un sistema tumoral inmovilizado:
+- Presenta menor tasa mutacional.
+- Ofrece blancos genéticos más estables.
+- Reduce la probabilidad de escape adaptativo.
+##### Objetivo de la intervención
+La edición genética se orienta a:
+- Oncogenes dominantes.
+- Vías críticas de replicación aberrante.
+No se busca edición global, sino interrupción selectiva de nodos funcionales clave.
+### 6. Integración y Retroalimentación
+El sistema opera bajo un esquema de control iterativo:
+1. SRDP detecta y caracteriza.
+2. TTF actúa según parámetros derivados.
+3. SRDP evalúa respuesta.
+4. Una vez alcanzado un estado estable, se habilita CRISPR.
+5. El sistema inmune del huésped completa la eliminación residual.
+No existe una fase única. El proceso es acumulativo y controlado.
+### 7. Enfoque Ético y Estratégico
+Este marco:
+- Evita la destrucción indiscriminada de tejido.
+- Reduce dependencia de quimioterapia citotóxica.
+- Prioriza tratamientos adaptativos, no reactivos.
+El cáncer no es tratado como un enemigo a exterminar, sino como un sistema a desactivar, corregir y absorber.
 
 ---
 

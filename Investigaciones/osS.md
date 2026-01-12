@@ -1,49 +1,111 @@
 # Proyecto Open Skies: SUNBURST
 
-Este informe presenta una propuesta innovadora para la creación de un sistema de velas solares modulares que permitirá la exploración interplanetaria de manera eficiente y escalable. El sistema se basa en la acumulación de pequeñas cargas lanzadas a la órbita, que se acoplan para formar una vela solar de dimensiones kilométricas. Este sistema utilizará una catapulta orbital para lanzar cargas en órbita, aprovechando la gravedad planetaria y el empuje solar para alcanzar velocidades relativistas, permitiendo la exploración de distancias astronómicas, con una eficiencia y escalabilidad sin precedentes.
+Este informe presenta una propuesta técnica para el desarrollo de un sistema de velas solares modulares acoplables, orientado a la exploración interplanetaria y a la expansión progresiva de la infraestructura orbital. El concepto se basa en la acumulación de cargas pequeñas lanzadas a órbita, que se ensamblan de forma incremental para constituir velas solares de gran escala, potencialmente de orden kilométrico.
+El sistema combina métodos de lanzamiento de alta eficiencia energética con propulsión pasiva continua, permitiendo alcanzar trayectorias hiperbólicas sostenidas y velocidades elevadas sin recurrir a grandes cantidades de propelente químico. El enfoque prioriza la escalabilidad, la reutilización de infraestructura y la reducción del coste energético por kilogramo colocado en órbita.
 
-## Preparativos
+## Marco conecptual
 
 [![model](https://img.shields.io/badge/ipynb-model-red)](https://colab.research.google.com/drive/1z2EWUpaRVfWeS2A-auSQY0NR4HsEb4ra?usp=sharing)
 
-Este proyecto consistirá de una interacción coordinada de 3 conceptos: Lanzamiento por Centrifugación Acumulada (LCA), Constelación Geoestacionaria Triple (CGT: Constelación de satélites de retransmisión diseñados para facilitar la comunicación entre las catapultas espaciales y el Control de Misión, así como para permitir la intercomunicación entre las propias centrifugadoras) y Velas Solares. Con los sistemas operando en conjunto, integrarán el método de lanzamiento más eficiente jamás construido, ya que apenas gastará algo de combustible monopropelente.
+El proyecto Open Skies: SUNBURST se apoya en la interacción coordinada de tres conceptos fundamentales:
 
+1. Lanzamiento por Centrifugación Acumulada (LCA): método de aceleración mecánica progresiva que permite transferir energía cinética a un carguero sin un consumo significativo de combustible.
+2. Constelación Geoestacionaria Triple (CGT): red de satélites de retransmisión diseñada para garantizar la comunicación continua entre las centrifugadoras orbitales y el Control de Misión, así como la sincronización entre los propios sistemas de lanzamiento.
 <img src="../docs/GSO_relay.png" alt="" width="100%">
 
+3. Velas solares modulares: superficies reflectantes acoplables, reconfigurables e inclinables, optimizadas para aprovechar la presión de radiación solar como fuente de empuje continuo a largo plazo.
 <img src="../docs/image2.png" alt="" width="100%">
 
-## Resumen
+La integración de estos tres elementos constituye una arquitectura de transporte espacial orientada a maximizar la eficiencia energética y la capacidad de expansión progresiva del sistema.
 
-LASU trabaja en conjunto con LRL para llevar a cabo el proyecto: Open Skies: SUNBURST.
+## Objetivos del proyecto
+- Desarrollar una infraestructura de lanzamiento orbital con consumo mínimo de propelente.
+- Validar la viabilidad del LCA como método de transferencia energética entre plataformas orbitales.
+- Implementar velas solares modulares capaces de escalar en superficie y rendimiento.
+- Reducir el coste marginal por kilogramo colocado en trayectorias interplanetarias.
+- Establecer una base tecnológica para misiones de exploración de largo plazo.
 
-1. Construir la primera centrifugadora, también conocida como "Catapulta Alpha" en Uruguay.
+## Descripción del sistema
 
-  - Tendrá un sistema eléctrico para hacerla rotar a muy altas velocidades (igual que Beta).
+### 1. Catapulta Alpha (plataforma terrestre)
+Construir la primera centrifugadora, también conocida como "Catapulta Alpha" en Uruguay.
+Catacterísticas principales:
+- Sistema eléctrico de alta potencia destinado a alcanzar elevadas velocidades angulares.
+- Plataforma de prueba para caracterizar tiempos de aceleración y límites estructurales.
+- Capacidad de alojar un carguero reutilizable para ensayos dinámicos.
+La Catapulta Alpha funcionará como banco de pruebas y como elemento inicial de transferencia energética hacia el sistema orbital.
 
-2. Se lanzará un vehículo de LASU con la capacidad de carga para transportar una centrifugadora idéntica a la que se posicionará en Tierra. Esa centrifugadora tiene el identificador de "Catapulta Beta".
+### 2. Catapulta Beta (plataforma orbital)
+Una centrifugadora idéntica a la Alpha, denominada Catapulta Beta, será lanzada a órbita terrestre baja.
+Parámetros iniciales:
+- Altura orbital aproximada: 150 km.
+- Configuración plegada durante el lanzamiento.
+- Despliegue y activación una vez en órbita.
+Consideraciones técnicas:
+- La rotación de la Beta introducirá perturbaciones orbitales significativas.
+- Se integrará un Sistema de Control de Reacción (RCS) destinado exclusivamente a la corrección y estabilización orbital.
+- El sistema RCS operará dentro de límites estrictos de empuje, priorizando la eficiencia.
+La plataforma contará con un sistema de captura del carguero basado en acoplamiento controlado, asistido por mecanismos electromagnéticos y correcciones de actitud, con el objetivo de preservar el centro de masa del conjunto.
 
-  - Se ubicará a 150 km.
-  - Tendrá que estar plegada para ocupar el menor espacio posible.
-  - Al estar operativa en órbita, generará fuerzas centrífugas que distorsionarán la órbita.
-  - Tendrá un sistema de control de reacción (RCS) integrado para estabilizar su órbita y no caer en la atmósfera. Sin embargo, esto estará limitado por la capacidad de empuje.
-  - Se implementará una plataforma rotatoria con imanes potentes estratégicamente ubicados para atrapar al carguero y reajustar su rotación para no desviar el centro de masa del sistema.
+### 3. Ajuste orbital y estabilización
+Una vez desplegada la Catapulta Beta, se prevé un lanzamiento adicional destinado a elevarla a una órbita más estable. Esta maniobra se realizará tras la validación inicial de los parámetros de rotación y control.
 
-3. LASU lanzará otro cohete para volver a impulsarlo a una órbita más estable, aunque se dejará en su posición hasta que se mejore la capacidad de rotación de la Alpha.
+### 4. Ensayos con carguero vacío
 
-4. Se posicionará el carguero (aún sin nombre) vacío de carga en la Alpha y comenzará a girar para calcular cuánto tiempo le toma acumular la velocidad necesaria.
+El carguero, inicialmente sin carga útil, será posicionado en la Catapulta Alpha.
 
-5. Se esperará hasta la siguiente ventana de lanzamiento para coordinar las catapultas y lanzar el carguero la cantidad de horas (antes) que se registró en la prueba.
+Objetivos del ensayo:
 
-  - Tendrá aletas para estabilizarse sin usar energía eléctrica.
-  - Tendrá un tanque pequeño de monopropelente para reajustar la trayectoria y no desviarse de Beta.
-  - El monopropelente restante se almacenará en Beta y se desacoplará para dejarse caer y reentrar en la atmósfera para ser recuperado mediante un sistema de guiado por rejillas aerodinámicas y paracaídas.
+- Determinar el tiempo necesario para acumular una velocidad de transferencia objetivo.
 
-6. Comenzará la rotación de Beta para lanzar el carguero a la Luna y probar un sobrevuelo.
+- Evaluar pérdidas energéticas y estabilidad dinámica.
 
-  - El carguero se dejará en el vacío, probablemente impactando a la Luna algunas semanas después.
+- Validar modelos teóricos de acumulación de energía cinética.
 
-7. Se lanzará el siguiente cohete de carga que impulsará a la Beta a una altura más segura y, mientras tanto, se comenzará a buscar una tecnología capaz de hacer rotar Alpha a velocidades mayores para que el carguero alcance a Beta sin usar combustible aparte del RCS.
+### 5. Transferencia Alpha–Beta
 
-  - Si no es posible hacer rotar más rápido a la Alpha, se implementará una vela solar al carguero para que pueda acceder a Beta con la máxima energía que Alpha pueda acumular con su capacidad limitada.
- 
-Para finalizar, todas las cargas usarán un sistema de velas solares acoplables, reoganizables e inclinables para optimizar la eficiencia de la radiación solar e ir más lejos con cargas más pesadas.
+Se coordinará una ventana de lanzamiento precisa entre ambas catapultas.
+
+El carguero contará con:
+
+- Superficies aerodinámicas pasivas para estabilización inicial.
+
+- Un tanque reducido de monopropelente destinado únicamente a correcciones de trayectoria.
+
+El monopropelente remanente será transferido a la Catapulta Beta. El tanque vacío será desacoplado y enviado a reentrada controlada para su recuperación mediante rejillas aerodinámicas y paracaídas.
+
+### 6. Prueba lunar
+
+La Catapulta Beta iniciará su rotación para lanzar el carguero en una trayectoria de transferencia lunar.
+
+Objetivo:
+
+- Validar un sobrevuelo lunar como demostración de capacidad interplanetaria inicial.
+
+Tras el sobrevuelo, el carguero será dejado en trayectoria libre, previendo un impacto lunar o una órbita de escape según los parámetros finales.
+
+### 7. Escalado del sistema
+
+Se lanzarán misiones adicionales destinadas a:
+
+- Elevar progresivamente la órbita de la Catapulta Beta.
+
+- Investigar tecnologías que permitan aumentar la velocidad angular máxima de la Catapulta Alpha.
+
+En caso de limitaciones estructurales o energéticas, se integrará una vela solar inicial al carguero para complementar la energía aportada por la centrifugación.
+
+### Velas solares modulares
+
+Todas las cargas futuras incorporarán sistemas de velas solares:
+
+- Acoplables y desacoplables.
+
+- Reconfigurables en geometría y orientación.
+
+- Optimizadas para maximizar el empuje fotónico según la distancia al Sol y la masa total del conjunto.
+
+Este enfoque permitirá alcanzar mayores distancias con cargas más pesadas, manteniendo un consumo energético mínimo tras la fase inicial de lanzamiento.
+
+Open Skies: SUNBURST propone una infraestructura de transporte orbital y propulsión pasiva basada en principios físicos conservadores, orientada a la eficiencia energética, la reutilización y la escalabilidad. El sistema no persigue soluciones de corto plazo, sino la construcción progresiva de una plataforma tecnológica capaz de sostener misiones interplanetarias de largo alcance con un coste marginal decreciente.
+
+El proyecto sienta las bases para una nueva forma de concebir el acceso al espacio y la exploración más allá de la órbita terrestre.
