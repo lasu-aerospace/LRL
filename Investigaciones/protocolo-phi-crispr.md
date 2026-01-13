@@ -30,7 +30,7 @@ Entre sus aplicaciones destacadas se encuentran:
 
 ---
 
-## Tratameinto del sistema ΦCRISPR
+## Tratamiento del sistema ΦCRISPR
 ### Neutralización Oncológica No Letal Inicial
 #### Resumen
 Se presenta un marco teórico interdisciplinario para la neutralización progresiva del cáncer mediante la integración secuencial de detección algorítmica, inmovilización física y eliminación genética dirigida. El enfoque prioriza la estabilización del sistema tumoral antes de su intervención molecular, reduciendo resistencia adaptativa, daño colateral y dependencia de tratamientos citotóxicos agresivos.
