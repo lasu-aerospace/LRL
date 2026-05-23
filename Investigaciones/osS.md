@@ -1,111 +1,195 @@
 # Proyecto Open Skies: SUNBURST
 
-Este informe presenta una propuesta técnica para el desarrollo de un sistema de velas solares modulares acoplables, orientado a la exploración interplanetaria y a la expansión progresiva de la infraestructura orbital. El concepto se basa en la acumulación de cargas pequeñas lanzadas a órbita, que se ensamblan de forma incremental para constituir velas solares de gran escala, potencialmente de orden kilométrico.
-El sistema combina métodos de lanzamiento de alta eficiencia energética con propulsión pasiva continua, permitiendo alcanzar trayectorias hiperbólicas sostenidas y velocidades elevadas sin recurrir a grandes cantidades de propelente químico. El enfoque prioriza la escalabilidad, la reutilización de infraestructura y la reducción del coste energético por kilogramo colocado en órbita.
+## Introduccion
 
-## Marco conecptual
+Open Skies: SUNBURST es una propuesta tecnica para el desarrollo de una arquitectura de acceso orbital basada en un sistema de lanzamiento quimico de dos etapas, optimizado para insercion eficiente en orbita terrestre baja.
 
-[![model](https://img.shields.io/badge/ipynb-model-red)](https://colab.research.google.com/drive/1z2EWUpaRVfWeS2A-auSQY0NR4HsEb4ra?usp=sharing)
+El sistema esta disenado bajo un principio central:
 
-El proyecto Open Skies: SUNBURST se apoya en la interacción coordinada de tres conceptos fundamentales:
+La complejidad debe concentrarse en fases controlables y bien caracterizadas del vuelo, evitando arquitecturas mecanicas de alta incertidumbre.
 
-1. Lanzamiento por Centrifugación Acumulada (LCA): método de aceleración mecánica progresiva que permite transferir energía cinética a un carguero sin un consumo significativo de combustible.
-2. Constelación Geoestacionaria Triple (CGT): red de satélites de retransmisión diseñada para garantizar la comunicación continua entre las centrifugadoras orbitales y el Control de Misión, así como la sincronización entre los propios sistemas de lanzamiento.
-<img src="../docs/GSO_relay.png" alt="" width="100%">
+Dentro de este marco, se incorporan sistemas auxiliares de propulsion pasiva (velas solares) como herramientas de optimizacion orbital de largo plazo, no como mecanismo primario de acceso al espacio.
 
-3. Velas solares modulares: superficies reflectantes acoplables, reconfigurables e inclinables, optimizadas para aprovechar la presión de radiación solar como fuente de empuje continuo a largo plazo.
-<img src="../docs/image2.png" alt="" width="100%">
+---
 
-La integración de estos tres elementos constituye una arquitectura de transporte espacial orientada a maximizar la eficiencia energética y la capacidad de expansión progresiva del sistema.
+## Marco conceptual
+
+SUNBURST se basa en tres componentes funcionales:
+
+### 1. Lanzamiento quimico de dos etapas
+
+Sistema principal de acceso a orbita:
+
+- Primera etapa: proporciona el delta-v inicial y coloca la carga en una trayectoria suborbital balistica.
+- Segunda etapa hipergolica: realiza la insercion orbital mediante encendido cercano al apogeo.
+
+Este esquema prioriza:
+- eficiencia energetica en insercion orbital
+- reduccion de complejidad estructural
+- alta confiabilidad operativa
+
+---
+
+### 2. Control orbital y comunicaciones
+
+Infraestructura de soporte basada en una red de satelites de retransmision, encargada de:
+
+- comunicacion continua con cargas en vuelo
+- sincronizacion de operaciones orbitales
+- soporte a maniobras de insercion y seguimiento
+
+---
+
+### 3. Propulsion pasiva auxiliar (velas solares)
+
+Las velas solares se integran como un sistema secundario de optimizacion orbital, no como mecanismo de lanzamiento.
+
+Funciones:
+- correccion orbital de bajo consumo energetico
+- transferencias lentas interorbitales
+- extension de misiones de larga duracion
+
+---
 
 ## Objetivos del proyecto
-- Desarrollar una infraestructura de lanzamiento orbital con consumo mínimo de propelente.
-- Validar la viabilidad del LCA como método de transferencia energética entre plataformas orbitales.
-- Implementar velas solares modulares capaces de escalar en superficie y rendimiento.
-- Reducir el coste marginal por kilogramo colocado en trayectorias interplanetarias.
-- Establecer una base tecnológica para misiones de exploración de largo plazo.
 
-## Descripción del sistema
+- Desarrollar un sistema de acceso orbital quimico viable y escalable
+- Optimizar la insercion orbital mediante perfiles de apogeo
+- Reducir la complejidad estructural respecto a sistemas no convencionales previos
+- Implementar sistemas auxiliares de propulsion pasiva para optimizacion orbital
+- Establecer una base tecnologica para misiones interplanetarias progresivas
 
-### 1. Catapulta Alpha (plataforma terrestre)
-Construir la primera centrifugadora, también conocida como "Catapulta Alpha" en Uruguay.
-Catacterísticas principales:
-- Sistema eléctrico de alta potencia destinado a alcanzar elevadas velocidades angulares.
-- Plataforma de prueba para caracterizar tiempos de aceleración y límites estructurales.
-- Capacidad de alojar un carguero reutilizable para ensayos dinámicos.
-La Catapulta Alpha funcionará como banco de pruebas y como elemento inicial de transferencia energética hacia el sistema orbital.
+---
 
-### 2. Catapulta Beta (plataforma orbital)
-Una centrifugadora idéntica a la Alpha, denominada Catapulta Beta, será lanzada a órbita terrestre baja.
-Parámetros iniciales:
-- Altura orbital aproximada: 150 km.
-- Configuración plegada durante el lanzamiento.
-- Despliegue y activación una vez en órbita.
-Consideraciones técnicas:
-- La rotación de la Beta introducirá perturbaciones orbitales significativas.
-- Se integrará un Sistema de Control de Reacción (RCS) destinado exclusivamente a la corrección y estabilización orbital.
-- El sistema RCS operará dentro de límites estrictos de empuje, priorizando la eficiencia.
-La plataforma contará con un sistema de captura del carguero basado en acoplamiento controlado, asistido por mecanismos electromagnéticos y correcciones de actitud, con el objetivo de preservar el centro de masa del conjunto.
+## Arquitectura del sistema
 
-### 3. Ajuste orbital y estabilización
-Una vez desplegada la Catapulta Beta, se prevé un lanzamiento adicional destinado a elevarla a una órbita más estable. Esta maniobra se realizará tras la validación inicial de los parámetros de rotación y control.
+### 1. Primera etapa
 
-### 4. Ensayos con carguero vacío
+Responsable de:
 
-El carguero, inicialmente sin carga útil, será posicionado en la Catapulta Alpha.
+- superar la atmosfera terrestre
+- proporcionar el impulso inicial del sistema
+- colocar la carga en una trayectoria suborbital controlada
 
-Objetivos del ensayo:
+Caracteristicas:
+- diseno convencional de alta eficiencia
+- enfoque en fiabilidad estructural
+- posible uso de lanzadores existentes
 
-- Determinar el tiempo necesario para acumular una velocidad de transferencia objetivo.
+---
 
-- Evaluar pérdidas energéticas y estabilidad dinámica.
+### 2. Cofia aerodinamica
 
-- Validar modelos teóricos de acumulación de energía cinética.
+Estructura de proteccion que encapsula:
 
-### 5. Transferencia Alpha–Beta
+- segunda etapa
+- sistemas de control
+- sistemas auxiliares desplegables
 
-Se coordinará una ventana de lanzamiento precisa entre ambas catapultas.
+Funciones:
+- reduccion de carga aerodinamica
+- proteccion termica y estructural
+- separacion en baja presion atmosferica
 
-El carguero contará con:
+---
 
-- Superficies aerodinámicas pasivas para estabilización inicial.
+### 3. Segunda etapa hipergolica
 
-- Un tanque reducido de monopropelente destinado únicamente a correcciones de trayectoria.
+Elemento central del sistema de insercion orbital.
 
-El monopropelente remanente será transferido a la Catapulta Beta. El tanque vacío será desacoplado y enviado a reentrada controlada para su recuperación mediante rejillas aerodinámicas y paracaídas.
+Caracteristicas:
+- propelentes: UDMH / NTO
+- sistema: alimentacion por presion (pressure-fed)
+- empuje: ~15 kN
+- impulso especifico: ~300 s
+- tiempo de combustion: ~90 s
 
-### 6. Prueba lunar
+Ventajas:
+- alta confiabilidad
+- ignicion automatica
+- baja complejidad mecanica
 
-La Catapulta Beta iniciará su rotación para lanzar el carguero en una trayectoria de transferencia lunar.
+Funcion:
+Completar la transicion de trayectoria suborbital a orbita estable mediante encendido cercano al apogeo.
 
-Objetivo:
+---
 
-- Validar un sobrevuelo lunar como demostración de capacidad interplanetaria inicial.
+### 4. Perfil de mision
 
-Tras el sobrevuelo, el carguero será dejado en trayectoria libre, previendo un impacto lunar o una órbita de escape según los parámetros finales.
+Secuencia nominal:
 
-### 7. Escalado del sistema
+1. lanzamiento mediante primera etapa
+2. trayectoria suborbital ascendente
+3. aproximacion al apogeo
+4. separacion de cofia
+5. estabilizacion de actitud
+6. encendido de segunda etapa
+7. insercion en orbita terrestre
 
-Se lanzarán misiones adicionales destinadas a:
+---
 
-- Elevar progresivamente la órbita de la Catapulta Beta.
+### 5. Sistema de control
 
-- Investigar tecnologías que permitan aumentar la velocidad angular máxima de la Catapulta Alpha.
+Incluye:
 
-En caso de limitaciones estructurales o energéticas, se integrará una vela solar inicial al carguero para complementar la energía aportada por la centrifugación.
+- control de actitud previo al encendido
+- sistema RCS para correcciones finas
+- control vectorial del empuje
 
-### Velas solares modulares
+Objetivos:
+- alineacion precisa del vector de empuje
+- minimizacion de perdidas de delta-v
+- estabilidad durante insercion orbital
 
-Todas las cargas futuras incorporarán sistemas de velas solares:
+---
 
-- Acoplables y desacoplables.
+### 6. Velas solares (subsistema auxiliar)
 
-- Reconfigurables en geometría y orientación.
+Caracteristicas:
+- desplegables en orbita
+- modulares
+- reconfigurables
 
-- Optimizadas para maximizar el empuje fotónico según la distancia al Sol y la masa total del conjunto.
+Funciones:
+- correcciones orbitales
+- transferencias de baja energia
+- extension de misiones
 
-Este enfoque permitirá alcanzar mayores distancias con cargas más pesadas, manteniendo un consumo energético mínimo tras la fase inicial de lanzamiento.
+Rol:
+Sistema de optimizacion orbital posterior a la insercion.
 
-Open Skies: SUNBURST propone una infraestructura de transporte orbital y propulsión pasiva basada en principios físicos conservadores, orientada a la eficiencia energética, la reutilización y la escalabilidad. El sistema no persigue soluciones de corto plazo, sino la construcción progresiva de una plataforma tecnológica capaz de sostener misiones interplanetarias de largo alcance con un coste marginal decreciente.
+---
 
-El proyecto sienta las bases para una nueva forma de concebir el acceso al espacio y la exploración más allá de la órbita terrestre.
+### 7. Ensamblaje orbital
+
+Permite:
+
+- acoplamiento de modulos en orbita
+- expansion progresiva de estructuras
+- construccion de sistemas de gran escala
+
+---
+
+## Filosofia de diseno
+
+SUNBURST adopta:
+
+- sistemas probados en fases criticas
+- reduccion de complejidad mecanica
+- modularidad estructural
+- separacion entre lanzamiento y optimizacion orbital
+
+La innovacion se centra en la arquitectura, no en la complejidad mecanica.
+
+---
+
+## Conclusiones
+
+SUNBURST define una arquitectura de acceso orbital basada en propulsion quimica optimizada y sistemas auxiliares de asistencia orbital.
+
+El sistema es:
+- coherente
+- escalable
+- tecnicamente viable
+
+Una plataforma evolutiva para exploracion espacial progresiva.
