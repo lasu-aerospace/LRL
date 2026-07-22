@@ -1,3 +1,5 @@
+# LRL Scientific Framework
+
 > [!CAUTION]
 > Usar Sistema Internacional de Unidades (SI).
 >
