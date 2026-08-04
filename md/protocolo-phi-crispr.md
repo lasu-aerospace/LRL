@@ -1,9 +1,9 @@
-# Protocolo ΦCRISPR
 El cáncer es una de las principales causas de mortandad a nivel mundial, caracterizado por el crecimiento descontrolado de células que pueden invadir tejidos circundantes y diseminarse a otras partes del cuerpo. La tecnología CRISPR-Cas9, desarrollada como una herramienta de edición genética de alta precisión, ha generado gran expectativa como una posible solución para combatir esta enfermedad.
 
 ## Marco Teórico
 
-[![model](https://img.shields.io/badge/ipynb-model-cyan)](docs/crisprphi.pdf)
+[![model1](https://img.shields.io/badge/pdf-Arquitectura_Teórica_Preliminar-red)](docs/crisprphi.pdf)
+[![model2](https://img.shields.io/badge/pdf-Modelo_murino-red)](docs/crisprphi2.pdf)
 
 La herramienta CRISPR-Cas9, inicialmente descubierta como parte del sistema inmunitario adaptativo de bacterias y arqueas, ha sido adaptada para la edición genética en organismos superiores. Su mecanismo principal consiste en el uso de una proteína Cas9, guiada por un ARN dirigido (gRNA), para identificar y cortar secuencias específicas de ADN. Este sistema permite modificar genes con una precisión sin precedentes, lo que lo ha convertido en una revolución para la biología molecular y la medicina.
 <br><br>
@@ -50,15 +50,15 @@ Sistema de inmovilización tumoral mediante campos eléctricos alternantes.
 Intervención genética de precisión a nivel subcelular.
 Cada módulo actúa en una fase distinta del proceso patológico, evitando solapamientos funcionales innecesarios.
 #### 3. SRDP
-##### Sistema de Detección y Reconocimiento de Patologías
-###### Objetivo
+#### Sistema de Detección y Reconocimiento de Patologías
+#### Objetivo
 Identificar, localizar y caracterizar regiones tumorales mediante análisis algorítmico de imágenes médicas.
-###### Fundamento teórico
+#### Fundamento teórico
 El SRDP se basa en redes neuronales entrenadas para reconocer:
 - Asimetrías morfológicas.
 - Patrones de crecimiento no compatibles con tejidos sanos.
 - Heterogeneidad estructural interna.
-###### Salida del sistema
+#### Salida del sistema
 El SRDP no produce un diagnóstico binario, sino un mapa paramétrico tumoral, incluyendo:
 - Localización espacial.
 - Volumen estimado.
@@ -66,36 +66,36 @@ El SRDP no produce un diagnóstico binario, sino un mapa paramétrico tumoral, i
 Este output es utilizado como entrada directa para la modulación del sistema TTF.
 ### 4. TTF
 #### Inmovilización Física del Sistema Tumoral
-##### Objetivo
+#### Objetivo
 Reducir la capacidad proliferativa y adaptativa del tumor sin inducir necrosis masiva.
-##### Principio físico
+#### Principio físico
 Se emplean campos eléctricos:
 - De baja intensidad.
 - Alternantes.
 - Intermitentes.
 - Con inversión periódica de polaridad.
 Estos campos interfieren selectivamente con procesos celulares de alta demanda energética y organización rápida, particularmente la mitosis.
-##### Diferencial biológico
+#### Diferencial biológico
 - Las células sanas operan lejos del umbral de inestabilidad.
 - Las células tumorales dependen de procesos altamente dinámicos y desregulados.
 Como consecuencia, el campo actúa como:
 - Ruido tolerable para tejido sano.
 - Factor desorganizador para células tumorales.
-##### Resultado esperado
+#### Resultado esperado
 - Supresión de expansión tumoral.
 - Reducción de heterogeneidad genética.
 - Estabilización temporal del sistema patológico.
 El tumor entra en un estado funcionalmente inerte, pero viable.
 ### 5. CRISPR
 #### Intervención Genética Dirigida
-##### Condición de activación
+#### Condición de activación
 La intervención genética se aplica únicamente tras la estabilización lograda por TTF.
-##### Fundamento teórico
+#### Fundamento teórico
 Un sistema tumoral inmovilizado:
 - Presenta menor tasa mutacional.
 - Ofrece blancos genéticos más estables.
 - Reduce la probabilidad de escape adaptativo.
-##### Objetivo de la intervención
+#### Objetivo de la intervención
 La edición genética se orienta a:
 - Oncogenes dominantes.
 - Vías críticas de replicación aberrante.
@@ -154,7 +154,7 @@ Para evaluar cuán preciso y eficiente es la aplicación del protocolo en un pac
 ### Probabilidad de éxito del Protocolo ΦCRISPR durante y previa a la etapa 3.
 |Tasa de mutación|RBC|
 |-|-|
-|![image](https://github.com/user-attachments/assets/be4422cc-ed8b-43b4-8752-6349a9b5a17e)|![image](https://github.com/user-attachments/assets/22b57ccc-6358-451f-b1b2-8e0b8aff1a23)|
+|<img src="https://github.com/user-attachments/assets/be4422cc-ed8b-43b4-8752-6349a9b5a17e" width="100%">|<img src="https://github.com/user-attachments/assets/22b57ccc-6358-451f-b1b2-8e0b8aff1a23" width="100%">|
 
 El **SDRP (Sistema de Detección y Reconocimiento de Patologías)** es un software diseñado para complementar el **Protocolo ΦCRISPR**, permitiendo evaluar la efectividad del tratamiento antes de su aplicación. Su función principal es analizar imágenes médicas, como radiografías y tomografías computarizadas (TAC), mediante algoritmos avanzados de **inteligencia artificial** y **redes neuronales convolucionales** especializadas en el reconocimiento de patrones patológicos.  
 
