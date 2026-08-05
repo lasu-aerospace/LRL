@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LRL</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -419,6 +419,7 @@
     display:inline-flex;
     align-items:center;
     gap:5px;
+    padding-right: 6px;
     white-space:nowrap;
     position:relative;
   }
@@ -476,10 +477,14 @@
     background:none;
     border:none;
     margin:0;
-    font:inherit;
     padding:0;
+    padding-right: 6px;
     cursor:pointer;
     text-align:left;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    font-weight:500;
+    line-height:normal;
   }
   .modal-overlay{
     position:fixed;
@@ -634,7 +639,7 @@
     <div class="ambient-glow" aria-hidden="true"></div>
     <div class="header-row">
       <div>
-        <div class="wordmark"><img src="../lrl_logo_full_no-bg.png" width="70%"></div>
+        <div class="wordmark"><img src="../lrl_banner_no-bg.png" width="70%"></div>
         <p class="tagline">Biblioteca abierta de informes y experimentos científicos</p>
       </div>
       <div class="drawer-label"><span class="live-dot" aria-hidden="true"></span>registros archivados&nbsp; <strong id="totalCount">—</strong></div>
