@@ -4,6 +4,7 @@ El cáncer es una de las principales causas de mortandad a nivel mundial, caract
 
 [![model1](https://img.shields.io/badge/pdf-Arquitectura_Teórica_Preliminar-red)](pdfs/crisprphi.pdf)
 [![model2](https://img.shields.io/badge/pdf-Modelo_murino-red)](pdfs/crisprphi2.pdf)
+[![model3](https://img.shields.io/badge/pdf-Tomografía_Ultrasónica-red)](pdfs/crisprphi3.pdf)
 
 La herramienta CRISPR-Cas9, inicialmente descubierta como parte del sistema inmunitario adaptativo de bacterias y arqueas, ha sido adaptada para la edición genética en organismos superiores. Su mecanismo principal consiste en el uso de una proteína Cas9, guiada por un ARN dirigido (gRNA), para identificar y cortar secuencias específicas de ADN. Este sistema permite modificar genes con una precisión sin precedentes, lo que lo ha convertido en una revolución para la biología molecular y la medicina.
 <br><br>
