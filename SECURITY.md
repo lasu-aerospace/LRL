@@ -1,10 +1,16 @@
 # Políticas de seguridad
 
-## Versiones soportadas
+## Medidas de seguridad
 
-| Version | Supported          |
+| Nombre  | Estado             |
 | ------- | ------------------ |
-| 1.0     | :white_check_mark: |
+| Política de seguridad     | ![model1](https://img.shields.io/badge/Habilitado-green) |
+| Boletines de seguridad     | ![model1](https://img.shields.io/badge/Habilitado-green) |
+| Informe privado de vulnerabilidad     | ![model1](https://img.shields.io/badge/Habilitado-green) |
+| Alertas de Dependabot     | ![model1](https://img.shields.io/badge/Habilitado-green) |
+| Alertas de escaneo de código     | ![model1](https://img.shields.io/badge/Habilitado-green) |
+| Alertas de detección de secretos     | ![model1](https://img.shields.io/badge/Habilitado-green) |
+| Hallazgos de calidad del código     | ![model1](https://img.shields.io/badge/Habilitado-green) |
 
 ## Reportando una vulnerabilidad
 
